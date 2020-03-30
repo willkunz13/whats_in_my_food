@@ -11,7 +11,7 @@ feature "user" do
 		click_on 'commit'
 
 		expect(current_path).to eq('/foods')
-		expect(page).to have_content('number: 1')
+		expect(page).to have_content('number: 50')
 		expect(page).to have_content('description: REAL VEGETABLE CHIPS')
 		expect(page).to have_content('GTIN/UPC code: 728229015529')
 		expect(page).to have_content('Brand Owner: The Hain Celestial Group, Inc.')

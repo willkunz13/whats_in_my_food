@@ -7,6 +7,5 @@ class FoodsController < ApplicationController
 		json = JSON.parse(response.body, symbolize_names:true)
 		@count = json[:foods].size 
 		@foods = json[:foods].slice(0,10)
-		binding.pry
 	end
 end
