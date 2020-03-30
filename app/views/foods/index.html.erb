@@ -1,1 +1,11 @@
-<p> Hi <p>
+<h1> Ingredient Search Results </h1>
+
+<h2> number: <% @count %>
+<% @foods.each do |food| %>
+	<h3><% food[:description] %></h3> 
+	<p><% food[:fdcID] %></p>
+	<p><% food[:brandOwner] %></p>
+	<p><% food[:ingredients] %></p>
+<% end %>
+
+
