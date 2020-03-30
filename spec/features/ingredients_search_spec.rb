@@ -7,7 +7,8 @@ feature "user" do
 
 		visit '/'
 
-		fill_in 'search', with: "sweet potatoes"
+		fill_in 'q', with: "sweet potatoes"
+		click_on 'commit'
 
 		expect(current_path).to eq('/foods')
 		expect(page).to have_content('number:')
